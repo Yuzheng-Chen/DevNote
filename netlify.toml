@@ -17,7 +17,7 @@ REPO_URL = "https://github.com/Yuzheng-Chen/DevNote"
 # (Optional) Site title in navbar
 SITE_TITLE = "Yuzheng's Dev Notes 📒"
 # (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
-SITE_TITLE_TAB = ""
+SITE_TITLE_TAB = "Yuzheng's Dev Notes"
 # (REQUIRED) Netlify site URL
 SITE_URL = "https://yuzheng.enderfaerie.com"
 # (Optional) Site Timezone
@@ -32,6 +32,6 @@ SLUGIFY = "y"
 # (Optional, default true) Shows knowledge graph on home page. Put "" to disable.
 HOME_GRAPH = "y"
 # (Optional, default true) Shows knowledge graph on every page. Put "" to disable.
-PAGE_GRAPH = "y"
+PAGE_GRAPH = ""
 # (Optional, default false) Whether sidebar sections should be collapsed by default.
 SIDEBAR_COLLAPSED = ""
