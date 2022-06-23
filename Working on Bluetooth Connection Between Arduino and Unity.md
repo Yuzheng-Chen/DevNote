@@ -55,7 +55,7 @@ We just duplicated the code in the "Demo" scene and made some small changes such
 
 The code for the HC-06 Bluetooth Module is also straightforward. We just checked if the serial is available, then we get data from `Serial.read()` method. For our project, we used **upper case** and **lower case** letters to control the stage of the EMS device.
 
-~~~Arduino
+~~~cpp
 #define Pin1 31
 #define Pin2 33
 #define Pin3 35
@@ -111,7 +111,7 @@ We followed [the official instruction of Adafruit Feather nRF52 Sense](https://l
 
 Here is the final version of our Arduino code (with `BluefruitConfig.h` file from `blueart_cmdmode` example):
 
-~~~Arduino
+~~~cpp
 #define Pin1 10
 #define Pin2 11
 #define Pin3 12
@@ -318,7 +318,7 @@ To make our setup more concise, we got to [Seeeduino XIAO BLE Sense](https://www
 We followed the instructions on [Seeedstudio wiki page](https://wiki.seeedstudio.com) of [Bluetooth Usage on XIAO BLE (Sense)](https://wiki.seeedstudio.com/XIAO-BLE-Sense-Bluetooth-Usage/), and successfully made a built-in LED using an app called "Light Blue" on a smartphone.
 
 **Orginal Example Code:**
-~~~Arduino
+~~~cpp
 #include <ArduinoBLE.h>
  
 BLEService ledService("19B10000-E8F2-537E-4F6C-D104768A1214"); // Bluetooth® Low Energy LED Service
@@ -399,24 +399,24 @@ Services, Characteristics and Descriptors are organized in a hierarchy with Serv
 With this basic Bluetooth concept, let's go through the example code core steps:
 
 **Step 1.** In this example code, it at first claims a service and a characteristic with their types & UUIDs
-~~~Arduino
+~~~cpp
 BLEService ledService("19B10000-E8F2-537E-4F6C-D104768A1214"); // Bluetooth® Low Energy LED Service
 
 BLEByteCharacteristic switchCharacteristic("19B10001-E8F2-537E-4F6C-D104768A1214", BLERead | BLEWrite);
 ~~~
 
 **Step 2.** Set the advertised service
-~~~Arduino
+~~~cpp
 BLE.setAdvertisedService(ledService);
 ~~~
 
 Step 3. Add characteristic to the service
-~~~Arduino
+~~~cpp
 ledService.addCharacteristic(switchCharacteristic);
 ~~~
 
 Step 4. Start advertising
-~~~Arduino
+~~~cpp
 BLE.advertise();
 ~~~
 
@@ -454,7 +454,7 @@ The `characteristic` here is the characteristic we created before.
 
 #### Code in Arduino
 According to the [API](https://github.com/arduino-libraries/ArduinoBLE/blob/master/docs/api.md), we modified the BLEByteCharacteristic into BLECharCharacteristic to receive string/char message and modified the data receiving part to fit our project. Here is our final code:
-~~~Arduino
+~~~cpp
 #define Pin1 1
 #define Pin2 2
 #define Pin3 3
