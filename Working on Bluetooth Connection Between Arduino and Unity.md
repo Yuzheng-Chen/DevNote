@@ -1,11 +1,11 @@
 # What do we want to do? (Target)
-We are designing an Electric Muscle Stimulator(EMS) based game with a wearable device. We need to use the device to connect with other devices and we aimed to make it as smaller as possible. Bluetooth technology allows devices to communicate with each other without the need for a central device like a router or access point, which exactly meets our requirements.
+We are designing an Electric Muscle Stimulator(EMS) based game with a wearable device. We need the device to connect with other devices and we aimed to make it as small as possible. Bluetooth technology allows devices to communicate with each other without the need for a central device like a router or access point, which meets our requirements exactly.
 
 # Bluetooth Connection on Certain Devices
 
 ## Bluetooth Connection on HC-06 Bluetooth Module
 
-The [HC-06](https://www.sgbotic.com/index.php?dispatch=products.view&product_id=2471) is a class 2 slave Bluetooth module designed for transparent wireless serial communication.
+The [HC-06](https://www.sgbotic.com/index.php?dispatch=products.view&product_id=2471) is a class 2 slave Bluetooth module designed for transparent wireless serial communication. This module is very popular in the prototype  building since it is easy to use and provides an stable connection.
 
 ### Wire Connection
 
@@ -17,11 +17,11 @@ There are 4 pins on the HC-06 Bluetooth Module, which are:
 
 VCC & GND are for **power supply**, and TXD & RXD are for **Transmitting** and **Receiving** data.
 
-The connection is very simple. I'm taking Arduino UNO as an example, but you can also find serial descriptions for most Arduino boards [here](https://www.arduino.cc/reference/en/language/functions/communication/serial/).
+To explain the method of connecting this module to other devices, we are taking the Arduino UNO as an example, but you can also find serial descriptions for most Arduino boards [here](https://www.arduino.cc/reference/en/language/functions/communication/serial/).
 
 ![[Arduino Uno - HC-06 Connection.png]]
 
-The only thing we need to pay attention to is the need to **connect TXD on HC-06 Bluetooth Module to RXD on the Arduino board to transmit data to the Arduino board, and connect RXD on HC-06 Bluetooth Module to TXD on the Arduino board for receiving data**.
+The only thing we need to pay attention to is **connect TXD on HC-06 Bluetooth Module to RXD on the Arduino board to transmit data to the Arduino board, and connect RXD on HC-06 Bluetooth Module to TXD on the Arduino board for receiving data**.
 
 ### Code Example
 
