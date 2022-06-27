@@ -68,4 +68,17 @@ Longitudinal or Sporadic Behavior?
 
 ### Experience Sampling
 
+ Lead User
+![[Pasted image 20220627104756.png]]
+![[Pasted image 20220627104827.png]]
 
+ Extreme Users
+
+[[Personas]]
+
+
+## Creating Design Goals
+All design is re-design
+- When you are designing, what matters? What should it accomplish?
+- Estimate whether different designs are meaningfully different.
+- Our goal is to make it explicit.
