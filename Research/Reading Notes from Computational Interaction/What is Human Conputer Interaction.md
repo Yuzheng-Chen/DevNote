@@ -1,0 +1,2 @@
+## About this book
+This book is concerned with the design of interactive technology for human use. It promotes an **approach**, called **computational interaction**, that focuses on the use of **algorithms** and **mathematical** models to **explain** and **enhance** interaction. 
