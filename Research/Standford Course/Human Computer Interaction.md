@@ -25,7 +25,50 @@ What might the experience be like?
 
 ![[Pasted image 20220624175002.png]]
 
-## Evaluating Design
+## Storyboards, Paper Prototypes, and Mockups
+
+![[Pasted image 20220627144122.png]]
+
+![[Pasted image 20220627164822.png]]
+
+### Storyboards
+- Story boarding is all about tasks.
+![[Pasted image 20220627144300.png]]
+- Story boarding is about communicating ideas (Always include human)
+
+- Setting
+	- People involved
+	- Environment
+	- Tast being accomplished
+- Sequence
+	- What steps are involved?
+	- What leads someone to use the app?
+	- What task is being illustrated?
+- Satisfaction
+	- What's motivates people to use this system?
+	- What does it enable people to accomplish?
+	- What need does the system fill?
+
+Benefits of Story boarding
+- Holistic focus: Helps emphasize how an interface accomplishes a task
+- Avoids commitment to a particular user interface (no buttons yet)
+- Helps get all the stakeholders on the same page in terms of the goal
+
+### Paper Prototyping
+![[Pasted image 20220627160609.png]]
+
+### Digital Mock-ups
+![[Pasted image 20220627164637.png]]
+
+## Faking it
+### Wizard of Oz
+- ...simulates machine behavior with human operators
+- Need to practice first
+![[Pasted image 20220627170717.png] ]
+
+### Video Prototyping
+
+# Evaluating Design
 ### Usability Studies
 - Surveys & Focus Groups
 - Feedback from Experts
@@ -82,3 +125,15 @@ All design is re-design
 - When you are designing, what matters? What should it accomplish?
 - Estimate whether different designs are meaningfully different.
 - Our goal is to make it explicit.
+
+The outcome of activity analysis
+- What are the steps?
+- What are the artifacts?
+- What are the goals? (how you'll measure)
+- What are the [[pain points]]?
+
+Have Multiple related activities
+- The same person uses the same design to achieve slightly different things
+- Also, different people may do things slightly differently
+- Because they have slightly different goals, expertise, ...
+- For empathy, keep 'em human
